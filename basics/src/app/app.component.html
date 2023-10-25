@@ -1,6 +1,6 @@
 <input (keyup)="changeImage($event)" [value]="imgURL">
 
-<img [src]="imgURL" alt="developer" />
+<app-post [postImg]="imgURL"></app-post>
 
 <p>Hello {{ str }} Loveable</p>
 <p>Hello {{ getName() }} Loveable</p>

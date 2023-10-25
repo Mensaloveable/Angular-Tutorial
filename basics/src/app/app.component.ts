@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title = 'basics';
   str = 'Mensa';
   imgURL = 'https://picsum.photos/id/1/500/500';
 
@@ -15,16 +16,10 @@ export class AppComponent {
   }
 
   changeImage = (e: KeyboardEvent) => {
-    this.imgURL = (e.target as HTMLInputElement).value
-  }
-}
-// import { Component } from '@angular/core';
+    this.imgURL = (e.target as HTMLInputElement).value;
+  };
 
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.css']
-// })
-// export class AppComponent {
-//   title = 'basics';
-// }
+  logImg = (e: string) => {
+    console.log(e);
+  };
+}

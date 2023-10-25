@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   str = 'Mensa';
+  imgURL = 'https://picsum.photos/id/1/500/500';
 
   getName() {
     return this.str.toUpperCase();

@@ -13,6 +13,10 @@ export class AppComponent {
   getName() {
     return this.str.toUpperCase();
   }
+
+  changeImage = (e: KeyboardEvent) => {
+    this.imgURL = (e.target as HTMLInputElement).value
+  }
 }
 // import { Component } from '@angular/core';
 
